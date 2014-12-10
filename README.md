@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Travis CI Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)
 
 _s
@@ -43,3 +44,11 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+APrayerForTheSea
+================
+
+Amar, A Prayer for the Sea website.
+
+UVU Sr. Project
+>>>>>>> 6f253efb5a698d4b6a00c7fc060a8b5f8e0e5439
