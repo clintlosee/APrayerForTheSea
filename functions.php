@@ -46,7 +46,8 @@ function amar_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 150, 150 ); // 150 pixels wide by 150 pixels tall
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -66,7 +67,7 @@ function amar_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
+		'aside', 'image', 'video', 'audio', 'gallery', 'quote', 'link',
 	) );
 
 	// Set up the WordPress core custom background feature.
