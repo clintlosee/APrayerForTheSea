@@ -64,8 +64,25 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 
 @import 'base';
+header {
+  height:auto;
+}
+nav h1 {
+  width:50px;
+  height:50px;
+}
+h1 a.site-title {
+  background: url("img/logo.png") no-repeat;
+  width:100%;
+  height:100%;
+  margin:0 15px 10px;
+  background-size: 100% auto !important;
+  @include linkTextOffscreen();
+}
 
 .navbar {
+  padding:15px 0;
+  line-height:1em;
   -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -118,7 +135,40 @@ and Blueprint http://www.blueprintcss.org/
   background-color: rgba(255,255,255,.3);
 }
 
+#content {
+  margin:100px 0;
+}
+
+
+/*======================= Contact Page ===========
+================================================== */
+/* Responsive iFrame */
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 5%;
+  height: 300px;
+  overflow: hidden;
+}
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media(min-width:768px) {
+  nav h1 {
+    width:100px;
+    height:100px;
+  }
+  h1 a.site-title {
+    width:100%;
+    height:100%;
+    margin:0 !important;
+}
   .navbar {
     padding: 25px 0;
     border-bottom: 0;
@@ -130,6 +180,7 @@ and Blueprint http://www.blueprintcss.org/
   }
   .navbar-brand, .menu-main-menu-container ul li a {
     color:#444 !important;
+    line-height:5em;
   }
 
 
@@ -141,13 +192,14 @@ and Blueprint http://www.blueprintcss.org/
   .navbar-default.top-nav-collapse {
     border-bottom: 1px solid rgba(255,255,255,.3);
   }
+
+  #content {
+    margin:150px auto;
+  }
 }
 
 
-#page {
-  margin: 60px auto 20px;
 
-}
 
 
 footer {

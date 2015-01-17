@@ -39,12 +39,13 @@
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
-
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container -->
+					<?php
+						if (has_nav_menu('primary')) :
+							wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) );
+						endif;
+					?>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
 		</nav>
 
 
@@ -54,17 +55,22 @@
 
 	</header><!-- #masthead -->
 
-<section><!-- Fix this so it only shows on front page and contact page -->
 
-<?php
-	//Responsive Google Map on Contact Page
-	if ( is_page('Contact')) {
-		echo '<div class="responsive-iframe-container">';
-		echo '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=murray,+ut&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.492924,9.876709&amp;ie=UTF8&amp;hq=&amp;hnear=Murray,+Salt+Lake,+Utah&amp;t=m&amp;ll=40.671525,-111.886482&amp;spn=0.045569,0.072956&amp;z=13&iwloc=near&amp;output=embed"></iframe>';
+		<?php
+		if ( is_page('Home')) {
+			//layerslider(3, 'homepage'); //insert LayerSlider : number is ID of slider
+		}
+
+		//Responsive Google Map on Contact Page
+		if ( is_page('Contact')) {
+			echo '<section>';
+			echo '<div class="responsive-iframe-container">';
+			echo '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=murray,+ut&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.492924,9.876709&amp;ie=UTF8&amp;hq=&amp;hnear=Murray,+Salt+Lake,+Utah&amp;t=m&amp;ll=40.671525,-111.886482&amp;spn=0.045569,0.072956&amp;z=13&iwloc=near&amp;output=embed"></iframe>';
 			echo '</div>';
-	}
-?>
+			echo '</section>';
+			}
+			?>
 
-</section>
 
-	<div id="content" class="site-content">
+
+	<div id="content" class="container">
