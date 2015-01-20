@@ -12,6 +12,15 @@ Template Name: Front Page
 
 get_header(); ?>
 
+<?php
+	echo '<section>';
+	echo '<div class="home-video">';
+	//layerslider(5);
+	echo '</div>';
+	echo '</section>';
+
+?>
+
 	<div id="" class="">
 		<div id="" class="" role="main">
 
