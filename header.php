@@ -59,7 +59,7 @@
 		<?php
 		 if ( is_page('Home')) {
 		// 	//layerslider(3, 'homepage'); //insert LayerSlider : number is ID of slider
-		 	putRevSlider( "homepage" );
+		 	//putRevSlider( "homepage" );
 		 }
 
 		//Responsive Google Map on Contact Page

@@ -81,11 +81,12 @@ h1 a.site-title {
 }
 
 .navbar {
-  padding:15px 0;
+  padding:10px 0;
   line-height:1em;
   -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out;
+  background-color:#fff;
 }
 
 .navbar-default {
@@ -136,7 +137,7 @@ h1 a.site-title {
 }
 
 #content {
-  margin:100px 0;
+  //margin:100px 0;
 }
 
 
@@ -161,8 +162,8 @@ h1 a.site-title {
 
 @media(min-width:768px) {
   nav h1 {
-    width:100px;
-    height:100px;
+    width:75px;
+    height:75px;
   }
   h1 a.site-title {
     width:100%;
@@ -170,15 +171,15 @@ h1 a.site-title {
     margin:0 !important;
 }
   .navbar {
-    padding: 25px 0;
+    padding: 10px 0;
     border-bottom: 0;
     letter-spacing: 1px;
-    background: 0 0;
+    //background: 0 0;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
-  .navbar-brand, .menu-main-menu-container ul li a {
+  #menu-main li a {
     color:#444 !important;
     line-height:5em;
   }
@@ -193,8 +194,8 @@ h1 a.site-title {
     border-bottom: 1px solid rgba(255,255,255,.3);
   }
 
-  #content {
-    margin:150px auto;
+  .page-template-front-page #content {
+    //margin:150px auto;
   }
 }
 
