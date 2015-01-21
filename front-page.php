@@ -12,27 +12,20 @@ Template Name: Front Page
 
 get_header(); ?>
 
-<?php
-	echo '<section>';
-	echo '<div class="home-video">';
-	//layerslider(5);
-	echo '</div>';
-	echo '</section>';
 
-?>
 
-	<div id="" class="">
+	<!-- <div id="" class="">
 		<div id="" class="" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<?php //get_template_part( 'content', 'page' ); ?>
 
 
 
 			<?php endwhile; // end of the loop. ?>
 
-		</div><!-- #content -->
+		</div><!-- #content
 	</div><!-- #primary -->
 
 
