@@ -65,11 +65,11 @@ and Blueprint http://www.blueprintcss.org/
 
 @import 'base';
 header {
-  height:auto;
+  height:40px;
 }
 nav h1 {
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
 }
 h1 a.site-title {
   background: url("img/logo.png") no-repeat;
@@ -86,7 +86,7 @@ h1 a.site-title {
   -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out;
-  background-color:#fff;
+  background-color:#222;
 }
 
 .navbar-default {
@@ -106,7 +106,7 @@ h1 a.site-title {
 .navbar-default .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #222;
+  color: #fff;
 }
 
 .navbar-default .navbar-brand .navbar-toggle:focus,
@@ -115,29 +115,35 @@ h1 a.site-title {
 }
 
 .navbar-default a {
-  color: #222;
+  color: #fff;
 }
 
 .navbar-default .nav li.active {
   outline: none;
-  background-color: rgba(255,255,255,.3);
+//  background-color: rgba(255,255,255,.3);
+  background-color: rgba(20,20,20,.3);
 }
 
 .navbar-default .nav li a {
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
+  color:#fff;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus,
 .navbar-default .nav li a.active {
   outline: 0;
-  background-color: rgba(255,255,255,.3);
+//  background-color: rgba(255,255,255,.3);
+  background-color: rgba(20,20,20,.3);
 }
 
 #content {
-  //margin:100px 0;
+  margin-top:100px;
+}
+.page-template-front-page #content {
+  margin-top: 0;
 }
 
 
@@ -161,6 +167,9 @@ h1 a.site-title {
 }
 
 @media(min-width:768px) {
+  header {
+    height:75px;
+  }
   nav h1 {
     width:75px;
     height:75px;
@@ -174,13 +183,13 @@ h1 a.site-title {
     padding: 10px 0;
     border-bottom: 0;
     letter-spacing: 1px;
-    //background: 0 0;
+    background-color: #222;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
   #menu-main li a {
-    color:#444 !important;
+    color:#fff !important;
     line-height:5em;
   }
 
@@ -204,5 +213,5 @@ h1 a.site-title {
 
 
 footer {
-  padding: 50px 0;
+  padding: 40px 0;
 }
