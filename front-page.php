@@ -12,9 +12,13 @@ Template Name: Front Page
 
 get_header(); ?>
 
-<?php
-putRevSlider( "homepage" );
-?>
+<div class="">
+
+    <?php
+      putRevSlider( "homepage" );
+    ?>
+
+</div>
 
 
 

@@ -460,17 +460,29 @@ h1 a.site-title {
 .page-template-front-page #content {
   margin-top: 0; }
 
+/* line 149, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto; }
+
+/* line 157, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.video-container iframe, .video-container object, .video-container embed {
+  width: 100%; }
+
 /*======================= Contact Page ===========
 ================================================== */
 /* Responsive iFrame */
-/* line 153, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 165, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .responsive-iframe-container {
   position: relative;
   padding-bottom: 5%;
   height: 300px;
   overflow: hidden; }
 
-/* line 161, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 173, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .responsive-iframe-container iframe, .vresponsive-iframe-container object, .vresponsive-iframe-container embed {
   position: absolute;
   top: 0;
@@ -479,22 +491,22 @@ h1 a.site-title {
   height: 100%; }
 
 @media (min-width: 768px) {
-  /* line 170, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 182, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   header {
     height: 75px; }
 
-  /* line 173, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 185, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   nav h1 {
     width: 75px;
     height: 75px; }
 
-  /* line 177, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 189, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   h1 a.site-title {
     width: 100%;
     height: 100%;
     margin: 0 !important; }
 
-  /* line 182, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 194, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .navbar {
     padding: 10px 0;
     border-bottom: 0;
@@ -504,22 +516,23 @@ h1 a.site-title {
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
 
-  /* line 191, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 203, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   #menu-main li a {
     color: #fff !important;
     line-height: 5em; }
 
-  /* line 197, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 209, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .top-nav-collapse {
     padding: 0;
     background-color: #000; }
 
-  /* line 202, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 214, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .navbar-default.top-nav-collapse {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
  }
 
-/* line 215, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 227, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 footer {
-  padding: 40px 0; }
+  height: 30px;
+  padding: 15px 0; }
