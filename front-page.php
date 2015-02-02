@@ -12,19 +12,14 @@ Template Name: Front Page
 
 get_header(); ?>
 
-	<div id="" class="">
-		<div id="" class="" role="main">
+<div class="">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+    <?php
+      putRevSlider( "homepage" );
+    ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+</div>
 
-
-
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
