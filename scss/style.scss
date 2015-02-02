@@ -64,8 +64,18 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 
 @import 'base';
+
+* {margin:0;padding:0;}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+
 header {
-  height:40px;
+  height:50px;
 }
 nav h1 {
   width:40px;
@@ -139,9 +149,9 @@ h1 a.site-title {
   background-color: rgba(20,20,20,.3);
 }
 
-footer {
-  height:30px;
-  padding: 15px 0;
+.site-footer {
+  padding: 20px 0;
+  background-color:#000;
 }
 
 .content-area {
