@@ -12,8 +12,8 @@ Template Name: Front Page
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="" class="">
+		<div id="" class="" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

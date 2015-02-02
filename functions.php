@@ -124,6 +124,9 @@ function amar_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'amar_scripts' );
 
+// Hide Admin bar
+add_filter('show_admin_bar', '__return_false');
+
 /**
  * Implement the Custom Header feature.
  */
