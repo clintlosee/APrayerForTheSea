@@ -464,20 +464,105 @@ h1 a.site-title {
   outline: 0;
   background-color: rgba(20, 20, 20, 0.3); }
 
-/* line 152, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 153, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed {
+  background-color: #292c2f;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px; }
+
+/* line 162, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top; }
+
+/* Footer Center */
+/* line 170, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle; }
+
+/* line 183, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px; }
+
+/* line 188, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0; }
+
+/* line 195, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2; }
+
+/* line 202, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-center p a {
+  color: #5383d3;
+  text-decoration: none; }
+
+/* Footer Right */
+/* line 209, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0; }
+
+/* line 217, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+/* line 225, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-icons {
+  margin-top: 25px; }
+
+/* line 229, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px; }
+
+/* line 244, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .site-footer {
   padding: 20px 0;
   background-color: #000; }
 
-/* line 157, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 251, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .content-area {
   margin-top: 100px; }
 
-/* line 161, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 255, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .page-template-front-page #content {
   margin-top: 0; }
 
-/* line 165, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 259, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .video-container {
   position: relative;
   height: 0;
@@ -485,20 +570,20 @@ h1 a.site-title {
   width: 100%;
   height: auto; }
 
-/* line 173, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 267, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .video-container iframe, .video-container object, .video-container embed {
   width: 100%; }
 
 /*======================= Contact Page ========== */
 /* Responsive iFrame */
-/* line 180, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 274, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .responsive-iframe-container {
   position: relative;
   padding-bottom: 5%;
   height: 200px;
   overflow: hidden; }
 
-/* line 188, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+/* line 282, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
 .responsive-iframe-container iframe, .vresponsive-iframe-container object, .vresponsive-iframe-container embed {
   position: absolute;
   top: 0;
@@ -507,22 +592,22 @@ h1 a.site-title {
   height: 100%; }
 
 @media (min-width: 768px) {
-  /* line 199, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 293, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   header {
     height: 75px; }
 
-  /* line 202, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 296, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   nav h1 {
     width: 75px;
     height: 75px; }
 
-  /* line 206, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 300, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   h1 a.site-title {
     width: 100%;
     height: 100%;
     margin: 0 !important; }
 
-  /* line 211, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 305, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .navbar {
     padding: 10px 0;
     border-bottom: 0;
@@ -532,23 +617,23 @@ h1 a.site-title {
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
 
-  /* line 220, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 314, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .navbar-nav > li > a {
     color: #fff !important;
     line-height: 5em; }
 
-  /* line 225, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 319, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .top-nav-collapse {
     padding: 0;
     background-color: #000; }
 
-  /* line 230, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 324, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .navbar-default.top-nav-collapse {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 
   /* Responsive iFrame */
-  /* line 239, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
+  /* line 337, C:/Users/clint/Documents/Websites/www.amar.dev/wp-content/themes/APrayerForTheSea/scss/style.scss */
   .responsive-iframe-container {
     height: 300px; }
  }
