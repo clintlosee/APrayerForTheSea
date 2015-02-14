@@ -12,19 +12,26 @@
 
 
 
-	<footer class="footer-distributed row footer-main col-md-12">
-
-			<div class="footer-left col-xs-12 col-md-4">
+	<footer class="footer-distributed row footer-main col-sm-12">
+		<?php if (is_active_sidebar('left-footer-box')) : ?>
+			<div class="footer-left col-sm-4">
+				<ul>
+					<?php dynamic_sidebar('left-footer-box'); ?>
+				</ul>
 
 				<div class="site-info">
 					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'amar' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'amar' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
 					<?php printf( __( 'Theme: %1$s by %2$s.', 'amar' ), 'Amar', '<a href="https://github.com/clintlosee/APrayerForTheSea" rel="designer">Clint Losee and Scott Gifford</a>' ); ?>
 				</div><!-- .site-info -->
-
 			</div>
+		<?php endif ?>
 
-			<div class="footer-center col-xs-12 col-md-4">
+		<?php if (is_active_sidebar('center-footer-box')) : ?>
+			<div class="footer-center col-sm-4">
+				<ul>
+					<?php dynamic_sidebar('center-footer-box'); ?>
+				</ul>
 
 				<div>
 					<i class="fa fa-map-marker"></i>
@@ -40,10 +47,14 @@
 					<i class="fa fa-envelope"></i>
 					<p><a href="mailto:support@company.com">support@company.com</a></p>
 				</div>
-
 			</div>
+		<?php endif ?>
 
-			<div class="footer-right col-xs-12 col-md-4">
+		<?php if (is_active_sidebar('right-footer-box')) : ?>
+			<div class="footer-right col-sm-4">
+				<ul>
+					<?php dynamic_sidebar('right-footer-box'); ?>
+				</ul>
 
 				<p class="footer-company-about">
 					<span>About the company</span>
@@ -60,8 +71,9 @@
 				</div>
 
 			</div>
+		<?php endif ?>
 
-		</footer>
+	</footer>
 
 
 

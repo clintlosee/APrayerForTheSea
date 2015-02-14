@@ -73,6 +73,13 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
 
 html, body {height: 100%;}
 
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 
 header {
   height:50px;
@@ -150,11 +157,17 @@ h1 a.site-title {
 }
 
 //******************** Footer *********************************//
+.footer {
+
+}
 .footer-distributed{
 	background-color: #292c2f;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
 	margin-top: 80px;
+    position: absolute;
+    bottom: 0;
+    width:110%;
 }
 
 .footer-distributed .footer-left,
@@ -244,6 +257,9 @@ h1 a.site-title {
 .site-footer {
   padding: 20px 0;
   background-color:#000;
+  position: absolute;
+  bottom: 0;
+  width:110%;
 }
 
 
