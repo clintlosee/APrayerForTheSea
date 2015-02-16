@@ -165,9 +165,6 @@ h1 a.site-title {
 	background-color: $mainBlack;
 	padding: 55px 50px;
 	margin-top: 80px;
-    position: absolute;
-    bottom: 0;
-    width:110%;
     color:$mainWhite;
 }
 
@@ -267,12 +264,19 @@ h1 a.site-title {
 
 
 //****************************** Main Content ************************//
-.content-area {
+#primary, #secondary {
   margin-top:100px;
+}
+#content {
+    margin-top:50px;
 }
 
 .page-template-front-page #content {
   margin-top: 0;
+}
+.entry-header {
+    height:50px;
+    padding:20px 0;
 }
 
 .video-container {
@@ -289,13 +293,16 @@ height: auto;
 .widget-title {
     color:$mainWhite;
 }
-
 .widget_search .search-form .search-field, .widget_search label {
     width:100%;
     height:40px;
 }
 
 /*======================= Contact Page ========== */
+#contact {
+    padding:20px 10px;
+}
+
 /* Responsive iFrame */
 .responsive-iframe-container {
   position: relative;
@@ -311,6 +318,16 @@ height: auto;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.wpcf7-form {
+    margin-top:0;
+}
+.wpcf7-form-control-wrap input, .wpcf7-textarea {
+    width:100%;
+}
+.wpcf7-submit {
+    width:200px;
+    height:40px;
 }
 
 
