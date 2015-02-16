@@ -13,26 +13,29 @@
 
 
 	<footer class="footer-distributed row footer-main col-sm-12">
-		<?php if (is_active_sidebar('left-footer-box')) : ?>
-			<div class="footer-left col-sm-4">
+
+		<!-- Left Footer Box Content -->
+		<div class="footer-left col-xs-12 col-md-4">
+			<?php if (is_active_sidebar('left-footer-box')) : ?>
 				<ul>
 					<?php dynamic_sidebar('left-footer-box'); ?>
 				</ul>
-
+			<?php else : ?>
 				<div class="site-info">
 					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'amar' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'amar' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
 					<?php printf( __( 'Theme: %1$s by %2$s.', 'amar' ), 'Amar', '<a href="https://github.com/clintlosee/APrayerForTheSea" rel="designer">Clint Losee and Scott Gifford</a>' ); ?>
 				</div><!-- .site-info -->
-			</div>
-		<?php endif ?>
+			<?php endif ?>
+		</div>
 
-		<?php if (is_active_sidebar('center-footer-box')) : ?>
-			<div class="footer-center col-sm-4">
+		<!-- Center Footer Box Content -->
+		<div class="footer-center col-xs-12 col-md-4">
+			<?php if (is_active_sidebar('center-footer-box')) : ?>
 				<ul>
 					<?php dynamic_sidebar('center-footer-box'); ?>
 				</ul>
-
+			<?php else : ?>
 				<div>
 					<i class="fa fa-map-marker"></i>
 					<p><span>21 Revolution Street</span> Paris, France</p>
@@ -47,15 +50,16 @@
 					<i class="fa fa-envelope"></i>
 					<p><a href="mailto:support@company.com">support@company.com</a></p>
 				</div>
-			</div>
-		<?php endif ?>
+			<?php endif ?>
+		</div>
 
-		<?php if (is_active_sidebar('right-footer-box')) : ?>
-			<div class="footer-right col-sm-4">
+		<!-- Right Footer Box Content -->
+		<div class="footer-right col-xs-12 col-md-4 last">
+			<?php if (is_active_sidebar('right-footer-box')) : ?>
 				<ul>
 					<?php dynamic_sidebar('right-footer-box'); ?>
 				</ul>
-
+			<?php else : ?>
 				<p class="footer-company-about">
 					<span>About the company</span>
 					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
@@ -69,13 +73,10 @@
 					<a href="#"><i class="fa fa-github"></i></a>
 
 				</div>
-
-			</div>
-		<?php endif ?>
+			<?php endif ?>
+		</div>
 
 	</footer>
-
-
 
 </div><!-- #page -->
 

@@ -107,7 +107,9 @@ a img {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-
+body { color: $mainBlack; font: 14px/16px $fontFam; }
+a { color: $mainBlue; }
+a:hover { color: $mainOrange; text-decoration:none; }
 
 /*--------------------------------------------------------------
 3.0 Elements
