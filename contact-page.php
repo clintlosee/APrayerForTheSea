@@ -13,11 +13,11 @@ Template Name: Contact Page
 get_header(); ?>
 
 
-		<div id="content" role="main">
+		<div class="content col-md-12" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="" id="contact" role="main">
+				<section class="col-md-3" id="contact" role="main">
 
 					<div class="" id="contact-info">
 						<h3>Contact Info</h3>
@@ -34,9 +34,12 @@ get_header(); ?>
 
 					<div class="" id="contact-form">
 						<h3>Let&#8217;s keep in touch</h3>
-						<?php the_content(); ?>
 					</div><!-- End #contact-form -->
 
+				</section>
+
+				<section class="col-md-9">
+					<?php get_template_part( 'content', 'page' ); ?>
 				</section>
 
 			<?php endwhile; // end of the loop. ?>
@@ -45,4 +48,4 @@ get_header(); ?>
 
 
 
-<?php get_footer(); ?>
+<?php get_footer('main'); ?>

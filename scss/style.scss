@@ -64,8 +64,25 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 
 @import 'base';
+
+* {margin:0;padding:0;}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
 header {
-  height:40px;
+  height:50px;
 }
 nav h1 {
   width:40px;
@@ -139,13 +156,117 @@ h1 a.site-title {
   background-color: rgba(20,20,20,.3);
 }
 
-footer {
-  height:30px;
-  padding: 15px 0;
+//******************** Footer *********************************//
+.footer {
+
+}
+.footer-distributed{
+	background-color: #292c2f;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
+
 }
 
-.content-area {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+/* Footer Center */
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #33383b;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+//**** Footer Home ***//
+.site-footer {
+  padding: 20px 0;
+  background-color:#000;
+  position: absolute;
+  bottom: 0;
+  width:110%;
+}
+
+
+//****************************** Main Content ************************//
+#primary, #secondary {
   margin-top:100px;
+}
+#content {
+    margin-top:50px;
 }
 
 .page-template-front-page #content {
@@ -163,9 +284,18 @@ height: auto;
 .video-container iframe, .video-container object, .video-container embed {
     width: 100%;
 }
+.entry-header {
+    height:50px;
+    padding:20px 0;
+}
+
 
 
 /*======================= Contact Page ========== */
+#contact {
+    padding:20px 10px;
+}
+
 /* Responsive iFrame */
 .responsive-iframe-container {
   position: relative;
@@ -181,6 +311,16 @@ height: auto;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.wpcf7-form {
+    margin-top:0;
+}
+.wpcf7-form-control-wrap input, .wpcf7-textarea {
+    width:100%;
+}
+.wpcf7-submit {
+    width:200px;
+    height:40px;
 }
 
 
@@ -221,6 +361,10 @@ height: auto;
     border-bottom: 1px solid rgba(255,255,255,.3);
   }
 
+  //************************** Footer **********//
+
+
+  //******************************* Main Content ****************//
   .page-template-front-page #content {
     //margin:150px auto;
   }

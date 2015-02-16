@@ -48,11 +48,6 @@
 			</div><!-- /.container -->
 		</nav>
 
-
-
-
-
-
 	</header><!-- #masthead -->
 
 
@@ -71,7 +66,6 @@
 			echo '</section>';
 			}
 			?>
-
 
 
 	<div id="content" class="container">
