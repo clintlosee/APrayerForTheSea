@@ -1,10 +1,12 @@
 // Color Variables
-   // Samples below
-$mainGreen: #69BD45;
-$mainGrey: #313131;
-$lightGrey: #f8f8f8;
-$borderColor: #efefef;
-$fontFam: 'Roboto', Arial, sans-serif;
+$mainBlue: #009de0;
+$mainOrange: #f57421;
+$mainYellow: #ecad00;
+$mainGreen: #aacd37;
+$mainBlack: #272727;
+$mainWhite: #ffffff;
+// Font Variables
+$fontFam: 'Open Sans', sans-serif;
 
 // Logo text replacement
 @mixin linkTextOffscreen() {
@@ -80,7 +82,7 @@ html {
   min-height: 100%;
 }
 
-
+/*----------------------- Header ----------------- */
 header {
   height:50px;
 }
@@ -97,13 +99,17 @@ h1 a.site-title {
   @include linkTextOffscreen();
 }
 
+/*----------------------- Navbar ----------------- */
 .navbar {
   padding:10px 0;
   line-height:1em;
   -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out;
-  background-color:#000;
+  background-color:$mainBlack;
+}
+.navbar a:hover {
+    color:$mainOrange !important;
 }
 
 .navbar-default {
@@ -123,7 +129,7 @@ h1 a.site-title {
 .navbar-default .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #fff;
+  color: $mainWhite;
 }
 
 .navbar-default .navbar-brand .navbar-toggle:focus,
@@ -131,21 +137,17 @@ h1 a.site-title {
   outline: 0;
 }
 
-.navbar-default a {
-  color: #fff;
-}
-
 .navbar-default .nav li.active {
   outline: none;
 //  background-color: rgba(255,255,255,.3);
-  background-color: rgba(20,20,20,.3);
+  background-color: $mainBlack;// rgba(20,20,20,.3);
 }
 
 .navbar-default .nav li a {
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
-  color:#fff;
+  color:$mainWhite;
 }
 
 .navbar-default .nav li a:hover,
@@ -153,19 +155,18 @@ h1 a.site-title {
 .navbar-default .nav li a.active {
   outline: 0;
 //  background-color: rgba(255,255,255,.3);
-  background-color: rgba(20,20,20,.3);
+  background-color: $mainBlack; //rgba(20,20,20,.3);
 }
 
-//******************** Footer *********************************//
+/*----------------------- Footer ----------------- */
 .footer {
-
+    color:$mainWhite;
 }
 .footer-distributed{
-	background-color: #292c2f;
-	font: bold 16px sans-serif;
+	background-color: $mainBlack;
 	padding: 55px 50px;
 	margin-top: 80px;
-
+    color:$mainWhite;
 }
 
 .footer-distributed .footer-left,
@@ -175,12 +176,10 @@ h1 a.site-title {
 	vertical-align: top;
 }
 
-
-
 /* Footer Center */
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
+	background-color: $mainBlack;
+	color: $mainWhite;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -198,7 +197,7 @@ h1 a.site-title {
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: $mainWhite;
 	vertical-align: middle;
 	margin:0;
 }
@@ -211,15 +210,13 @@ h1 a.site-title {
 }
 
 .footer-distributed .footer-center p a{
-	color:  #5383d3;
+    color:$mainWhite;
 	text-decoration: none;;
 }
-
 
 /* Footer Right */
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -227,7 +224,7 @@ h1 a.site-title {
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
+	color: $mainWhite;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -244,24 +241,27 @@ h1 a.site-title {
 	cursor: pointer;
 	background-color: #33383b;
 	font-size: 20px;
-	color: #ffffff;
+	color: $mainWhite;
 	text-align: center;
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+.footer-left, .footer-center, .footer-right {
+    padding-top: 20px;
+}
 
 //**** Footer Home ***//
 .site-footer {
-  padding: 20px 0;
-  background-color:#000;
+  padding: 30px 0;
+  background-color:$mainBlack;
   position: absolute;
   bottom: 0;
-  width:110%;
+  width:100%;
 }
 
 
-//****************************** Main Content ************************//
+/*----------------------- Main Content ----------------- */
 #primary, #secondary {
   margin-top:100px;
 }
@@ -272,26 +272,31 @@ h1 a.site-title {
 .page-template-front-page #content {
   margin-top: 0;
 }
-
-.video-container {
-position: relative;
-height: 0;
-overflow: hidden;
-width: 100%;
-height: auto;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-    width: 100%;
-}
 .entry-header {
     height:50px;
     padding:20px 0;
 }
 
+// .video-container {
+// position: relative;
+// height: 0;
+// overflow: hidden;
+// width: 100%;
+// height: auto;
+// }
+//
+// .video-container iframe, .video-container object, .video-container embed {
+//     width: 100%;
+// }
+.widget-title {
+    color:$mainWhite;
+}
+.widget_search .search-form .search-field, .widget_search label {
+    width:100%;
+    height:40px;
+}
 
-
-/*======================= Contact Page ========== */
+/*----------------------- Contact Page ----------------- */
 #contact {
     padding:20px 10px;
 }
@@ -312,6 +317,9 @@ height: auto;
   width: 100%;
   height: 100%;
 }
+/*-----------------------
+------- Contact Form 7 Styles
+------------------------------------------- */
 .wpcf7-form {
     margin-top:0;
 }
@@ -324,7 +332,7 @@ height: auto;
 }
 
 
-
+/*----------------------- Desktop Styles ----------------- */
 @media(min-width:768px) {
   header {
     height:75px;
@@ -342,13 +350,13 @@ height: auto;
     padding: 10px 0;
     border-bottom: 0;
     letter-spacing: 1px;
-    background-color: #000;
+    background-color: $mainBlack;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
   .navbar-nav>li>a {
-    color:#fff !important;
+    color:$mainWhite !important;
     line-height:5em;
   }
 
@@ -364,7 +372,7 @@ height: auto;
   //************************** Footer **********//
 
 
-  //******************************* Main Content ****************//
+  /*----------------------- Contact Page ----------------- */
   .page-template-front-page #content {
     //margin:150px auto;
   }
