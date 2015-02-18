@@ -82,7 +82,7 @@ html {
   min-height: 100%;
 }
 
-
+/*----------------------- Header ----------------- */
 header {
   height:50px;
 }
@@ -99,6 +99,7 @@ h1 a.site-title {
   @include linkTextOffscreen();
 }
 
+/*----------------------- Navbar ----------------- */
 .navbar {
   padding:10px 0;
   line-height:1em;
@@ -139,7 +140,7 @@ h1 a.site-title {
 .navbar-default .nav li.active {
   outline: none;
 //  background-color: rgba(255,255,255,.3);
-  background-color: rgba(20,20,20,.3);
+  background-color: $mainBlack;// rgba(20,20,20,.3);
 }
 
 .navbar-default .nav li a {
@@ -154,12 +155,12 @@ h1 a.site-title {
 .navbar-default .nav li a.active {
   outline: 0;
 //  background-color: rgba(255,255,255,.3);
-  background-color: rgba(20,20,20,.3);
+  background-color: $mainBlack; //rgba(20,20,20,.3);
 }
 
-//******************** Footer *********************************//
+/*----------------------- Footer ----------------- */
 .footer {
-
+    color:$mainWhite;
 }
 .footer-distributed{
 	background-color: $mainBlack;
@@ -175,11 +176,9 @@ h1 a.site-title {
 	vertical-align: top;
 }
 
-
-
 /* Footer Center */
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
+	background-color: $mainBlack;
 	color: $mainWhite;
 	font-size: 25px;
 	width: 38px;
@@ -214,7 +213,6 @@ h1 a.site-title {
     color:$mainWhite;
 	text-decoration: none;;
 }
-
 
 /* Footer Right */
 .footer-distributed .footer-company-about{
@@ -255,15 +253,15 @@ h1 a.site-title {
 
 //**** Footer Home ***//
 .site-footer {
-  padding: 20px 0;
+  padding: 30px 0;
   background-color:$mainBlack;
   position: absolute;
   bottom: 0;
-  width:110%;
+  width:100%;
 }
 
 
-//****************************** Main Content ************************//
+/*----------------------- Main Content ----------------- */
 #primary, #secondary {
   margin-top:100px;
 }
@@ -279,17 +277,17 @@ h1 a.site-title {
     padding:20px 0;
 }
 
-.video-container {
-position: relative;
-height: 0;
-overflow: hidden;
-width: 100%;
-height: auto;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-    width: 100%;
-}
+// .video-container {
+// position: relative;
+// height: 0;
+// overflow: hidden;
+// width: 100%;
+// height: auto;
+// }
+//
+// .video-container iframe, .video-container object, .video-container embed {
+//     width: 100%;
+// }
 .widget-title {
     color:$mainWhite;
 }
@@ -298,7 +296,7 @@ height: auto;
     height:40px;
 }
 
-/*======================= Contact Page ========== */
+/*----------------------- Contact Page ----------------- */
 #contact {
     padding:20px 10px;
 }
@@ -319,6 +317,9 @@ height: auto;
   width: 100%;
   height: 100%;
 }
+/*-----------------------
+------- Contact Form 7 Styles
+------------------------------------------- */
 .wpcf7-form {
     margin-top:0;
 }
@@ -331,7 +332,7 @@ height: auto;
 }
 
 
-
+/*----------------------- Desktop Styles ----------------- */
 @media(min-width:768px) {
   header {
     height:75px;
@@ -349,7 +350,7 @@ height: auto;
     padding: 10px 0;
     border-bottom: 0;
     letter-spacing: 1px;
-    background-color: #000;
+    background-color: $mainBlack;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -371,7 +372,7 @@ height: auto;
   //************************** Footer **********//
 
 
-  //******************************* Main Content ****************//
+  /*----------------------- Contact Page ----------------- */
   .page-template-front-page #content {
     //margin:150px auto;
   }
