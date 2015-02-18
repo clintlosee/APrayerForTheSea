@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(window).stellar(),$.stellar.positionProperty.transfade={setPosition:function(t,n,o,s,r){var a=s-r,e=$(window).height()/5;t.css("transform","translate3d(0, "+a+"px, 0").css("opacity",1-a/e)}}});
