@@ -43,6 +43,12 @@ html, body {
     z-index: 999;
   }
 
+  h3{
+    margin-top: 0;
+    color: #ff9900;
+    font-weight: 200;
+  }
+
   .graphic-overlap{
     margin-top: -300px;
   }
@@ -137,5 +143,9 @@ footer{
 
 p{
   font-size: 1em;
+}
+
+.img-responsive{
+  margin:auto;
 }
 

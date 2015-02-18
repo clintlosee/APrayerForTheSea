@@ -34,6 +34,10 @@ html, body {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     z-index: 999; }
+  .slide h3 {
+    margin-top: 0;
+    color: #ff9900;
+    font-weight: 200; }
   .slide .graphic-overlap {
     margin-top: -300px; }
 
@@ -114,3 +118,6 @@ footer {
 
 p {
   font-size: 1em; }
+
+.img-responsive {
+  margin: auto; }
