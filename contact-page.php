@@ -12,7 +12,7 @@ Template Name: Contact Page
 
 get_header(); ?>
 
-
+    <div class="container">
 		<div class="content col-md-12" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
-
+    </div><!-- end .container -->
 
 
 <?php get_footer('main'); ?>

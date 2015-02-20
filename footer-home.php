@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="" class="site-footer footer" role="contentinfo">
+	<footer id="" class="site-footer footer container" role="contentinfo">
 		<div class="site-info container">
 			<p>Copyright &copy; <?php echo date('Y'); ?> &middot; All Rights Reserved &middot; <a href="http://your website.com/" >A'mar Concerts</a></p>
 			

@@ -12,7 +12,7 @@
 
 
 
-	<footer class="footer-distributed row footer-main col-sm-12">
+	<footer class="footer-distributed container footer-main col-sm-12">
 
 		<!-- Left Footer Box Content -->
 		<div class="footer-left col-xs-12 col-md-4">
