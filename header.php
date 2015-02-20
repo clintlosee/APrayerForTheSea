@@ -71,4 +71,4 @@
 			?>
 
 
-	<div id="content" class="container">
+	<div id="content" class="">
