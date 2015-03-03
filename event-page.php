@@ -79,7 +79,7 @@ get_header(); ?>
           </p></div>
           <div class="col-md-6"><p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p></div>
         </div>
-        <div class="row">
+        <div class="row sponsors">
           <div class="col-sm-4"><img src="http://www.amar.dev/wp-content/themes/APrayerForTheSea/img/logo1.png" class="img-responsive"></div>
           <div class="col-sm-4"><img src="http://www.amar.dev/wp-content/themes/APrayerForTheSea/img/logo2.png" class="img-responsive"></div>
           <div class="col-sm-4"><img src="http://www.amar.dev/wp-content/themes/APrayerForTheSea/img/uvu_digitalmedia_logo.png" class="img-responsive"></div>
