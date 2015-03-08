@@ -107,23 +107,69 @@ a img {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-body { color: $mainBlack; font: 14px/16px $fontFam; }
-a { color: $mainBlue; }
-a:hover { color: $mainOrange; text-decoration:none; }
+body {
+    color: $mainBlack;
+    background-color: $bodyGrey;
+    font-size: 14px;
+    font-family:$fontFam;
+    word-wrap:break-word;
+    line-height: 1.7;
+}
+a {
+    color: $mainBlue;
+    -webkit-transition: all 0.3s;
+         -moz-transition: all 0.3s;
+           -o-transition: all 0.3s;
+              transition: all 0.3s;
+}
+a:hover, a:focus { color: $mainOrange; text-decoration:none; }
+h1, h2, h3, h4, h5, h6 { font-family: $fontFam; font-weight:700; }
+h1,
+.h1 {
+  font-size: 28px;
+}
+
+h2,
+.h2 {
+  font-size: 24px;
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+}
+
+h6,
+.h6 {
+  font-size: 13px;
+}
 
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
+img {
+    height:auto;
+    max-width:100%;
+}
+
+
 /* --------------------------------
-
 xButtons
-
 -------------------------------- */
 
 .btn {
 	border: none;
 	box-shadow: none;
-	border-radius: .25em;
 	font: {
 		size: 1.4rem;
 		family: $fontFam;
@@ -164,7 +210,7 @@ xButtons
 
 		.no-touch &:hover {
 			color: $mainOrange;
-			background: $mainBlue;
+			background-color: $mainBlue;
 		}
 	}
 }
@@ -172,9 +218,37 @@ xButtons
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* Corrects font size not being inherited in all browsers */
+  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing:  content-box;
+  box-sizing:     content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
 input[type=text], input[type=email], textarea, select {
 	border: 1px solid $mainGreen;
-	border-radius: .25em;
 	background: $mainWhite;
 
 	&:focus {
