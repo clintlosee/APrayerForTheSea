@@ -47,6 +47,8 @@ function amar_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'amar-featured', 750, 410, true );
+	add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
 	set_post_thumbnail_size( 150, 150 ); // 150 pixels wide by 150 pixels tall
 
 	// This theme uses wp_nav_menu() in one location.
@@ -92,8 +94,8 @@ if (!function_exists(amar_widgets_init)) {
 			'id'            => 'sidebar-1',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
-			'before_title'  => '<h1 class="widget-title">',
-			'after_title'   => '</h1>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		));
 		register_sidebar( array(
 			'name'          => __( 'Left Footer Box', 'amar' ),

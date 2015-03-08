@@ -38,7 +38,7 @@ get_header(); ?>
 
 				</section>
 
-				<section class="col-md-9">
+				<section class="col-md-8 col-md-offset-1">
 					<?php get_template_part( 'content', 'page' ); ?>
 				</section>
 
