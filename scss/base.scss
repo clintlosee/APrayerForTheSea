@@ -163,6 +163,7 @@ img {
 }
 
 
+
 /* --------------------------------
 xButtons
 -------------------------------- */
@@ -178,6 +179,9 @@ xButtons
 	padding: .6em 2.2em;
 	cursor: pointer;
 	background: $mainBlue;
+    -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out, color .3s ease-in-out;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
 
 	&:focus {
 		outline: none;
@@ -213,6 +217,11 @@ xButtons
 			background-color: $mainBlue;
 		}
 	}
+}
+
+.btn:hover {
+    background: lighten($mainBlue, 5%);
+    color:$mainWhite;
 }
 
 /*--------------------------------------------------------------
@@ -473,9 +482,6 @@ select {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-10.1 Posts and pages
---------------------------------------------------------------*/
 .sticky {
   display: block;
 }
@@ -504,6 +510,11 @@ select {
   clear: both;
   margin: 0 0 1.5em;
 }
+
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 10.2 Asides

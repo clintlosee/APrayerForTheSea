@@ -7,26 +7,31 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="container">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<div id="primary" class="content-area col-md-8">
+			<main id="main" class="site-main" role="main">
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php amar_post_nav(); ?>
+				<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				<?php amar_post_nav(); ?>
 
-		<?php endwhile; // end of the loop. ?>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			<?php endwhile; // end of the loop. ?>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+	<?php get_sidebar(); ?>
+
+</div><!-- end container -->
+
+<?php get_footer('main'); ?>
