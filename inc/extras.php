@@ -82,6 +82,26 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) :
 	add_action( 'wp_head', 'amar_render_title' );
 endif;
 
+// Amar header menu
+if ( ! function_exists( 'amar_header_menu' ) ) :
+/**
+ * Header menu (should you choose to use one)
+ */
+function amar_header_menu() {
+  // display the WordPress Custom Menu if available
+  wp_nav_menu(array(
+    'menu'              => 'primary',
+    'theme_location'    => 'primary',
+    'depth'             => 2,
+    'container'         => 'div',
+    'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+    'menu_class'        => 'nav navbar-nav navbar-right',
+	'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+    'walker'            => new wp_bootstrap_navwalker()
+  ));
+} /* end header menu */
+endif;
+
 /**
  * Sets the authordata global when viewing an author archive.
  *

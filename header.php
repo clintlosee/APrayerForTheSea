@@ -26,11 +26,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
-				<div class="navbar-header">
+				<div class="row navbar-header">
 					<div class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -41,12 +40,14 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div class="">
 					<?php
-						if (has_nav_menu('primary')) :
-							wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) );
-						endif;
+//						if (has_nav_menu('primary')) :
+//							wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) );
+//						endif;
 					?>
+
+					<?php amar_header_menu(); ?>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
 		</nav>
