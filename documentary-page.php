@@ -12,19 +12,40 @@ Template Name: Documentary Page
 
 get_header(); ?>
 
+<div id="headerwrap">
+    <div class="doc-video">
+        <!-- <iframe src="https://www.youtube.com/embed/RwA3JAeST5E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+        <iframe src="https://www.youtube.com/embed/RwA3JAeST5E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <div class="container">
-		<div class="content col-md-12" role="main">
+        <div class="row">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+        <section class="doc-info">
 
-				<section class="col-md-8 col-md-offset-1">
-					<?php get_template_part( 'content', 'page' ); ?>
-				</section>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; // end of the loop. ?>
+            <div class="row">
+                <div class="col-md-9">
+                    <h1><?php the_title() ?></h1>
+                </div>
+            </div>
 
-		</div><!-- #content -->
-    </div><!-- end .container -->
+            <div class="row">
+                <div class="col-md-12">
+                    <?php the_content() ?>
+                </div>
+
+            </div>
+
+
+
+            <?php endwhile; // end of the loop. ?>
+        </section>
+
+        </div><!-- row -->
+    </div> <!-- container -->
+</div><!-- headerwrap -->
 
 
 <?php get_footer('main'); ?>
