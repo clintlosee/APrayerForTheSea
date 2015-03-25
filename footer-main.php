@@ -36,12 +36,12 @@
 			<?php else : ?>
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>21 Revolution Street</span> Paris, France</p>
+					<p><span>21 Revolution Street</span> Orem, Utah</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>+1 801 1234567</p>
 				</div>
 
 				<div>

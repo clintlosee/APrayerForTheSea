@@ -10,7 +10,6 @@ $mainWhite: #ffffff;
 $mainBorder: #DADADA;
 $bodyGrey: #F2F2F2;
 
-
 $success: $mainGreen;
 $alert: $mainOrange;
 
@@ -78,10 +77,6 @@ and Blueprint http://www.blueprintcss.org/
 
 * {margin:0;padding:0;}
 
-/* must declare 0 margins on everything, also for main layout components use padding, not
-vertical margins (top and bottom) to add spacing, else those margins get added to total height
-and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
-
 html, body {height: 100%;}
 
 /* Sticky footer styles
@@ -116,25 +111,10 @@ h1 a.site-title {
     background-color:$mainBlack;
 }
 #headerwrap iframe {
-	// background: url(../img/back.jpg) no-repeat center top;
 	margin-top: 110px;
-	// padding-top: 250px;
-	// text-align:center;
-	// background-attachment: relative;
-	// background-position: center center;
 	min-height: 720px;
 	width: 100%;
-    z-index: 1;
-
-    // -webkit-background-size: 100%;
-    // -moz-background-size: 100%;
-    // -o-background-size: 100%;
-    // background-size: 100%;
-    //
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
+  z-index: 1;
 }
 #headerwrap.doc-info {
     z-index:10;
@@ -142,7 +122,6 @@ h1 a.site-title {
     top:0;
     left:50px;
 }
-
 #headerwrap h1 {
 	color:$mainBlue;
 	padding-top: 10px;
@@ -151,7 +130,6 @@ h1 a.site-title {
 	font-size: 80px;
 	font-weight: bold;
 }
-
 #headerwrap h4 {
 	font-weight: 400;
 	color: $mainBlack;
@@ -218,8 +196,6 @@ h1 a.site-title {
   background-color: $mainBlack; //rgba(20,20,20,.3);
 }
 
-
-
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -277,6 +253,7 @@ h1 a.site-title {
   position: absolute;
   bottom: 0;
   width:100%;
+  z-index:999;
 }
 
 //**** Footer Main ***//
@@ -373,6 +350,14 @@ h1 a.site-title {
 
 
 /*----------------------- Main Content ----------------- */
+#home-video {
+  padding-top:0px;
+  z-index:1;
+}
+.page-template-front-page {
+  background-color:$mainBlack;
+}
+
 #primary, #secondary {
   margin-top:70px;
 }
@@ -382,9 +367,8 @@ h1 a.site-title {
 #secondary {
 
 }
-.blog #content {
-    margin-top:30px;
-}
+.blog #content,
+.single #content,
 .page-template-contact-page #content {
     margin-top:30px;
 }
@@ -392,18 +376,6 @@ h1 a.site-title {
   margin-top: 0;
 }
 
-
-// .video-container {
-// position: relative;
-// height: 0;
-// overflow: hidden;
-// width: 100%;
-// height: auto;
-// }
-//
-// .video-container iframe, .video-container object, .video-container embed {
-//     width: 100%;
-// }
 .widget-title {
     color:$mainWhite;
 }
@@ -737,7 +709,6 @@ object {
   margin-top: 30px;
 }
 
-
 /* Custom Category Widget */
 .cats-widget ul li span {
   float: right;
@@ -806,9 +777,7 @@ object {
   border-color: #DA4453;
 }
 
-
-
-/* =Comments
+/* Comments
 ----------------------------------------------- */
 
 .comment-content a {
@@ -1161,7 +1130,7 @@ p.logged-in-as {
     height:40px;
 }
 
-/* =Elements when no javaScript is present
+/* Elements when no javaScript is present
 ----------------------------------------------- */
 #submit,
 .tagcloud,
@@ -1196,6 +1165,9 @@ button[type=submit],
 
 /*----------------------- Desktop Styles ----------------- */
 @media(min-width:768px) {
+  #home-video {
+    padding-top:50px;
+  }
   header .site-header {
     // height:75px;
   }
@@ -1237,15 +1209,11 @@ button[type=submit],
       padding: 20px 25px;
   }
 
-
   ul.nav li.dropdown:hover > ul.dropdown-menu {
       display: block;
     }
 
-  //************************** Footer **********//
-
-
-  /*----------------------- Contact Page ----------------- */
+/*----------------------- Contact Page ----------------- */
 
   /* Responsive iFrame */
   .responsive-iframe-container {

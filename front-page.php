@@ -15,8 +15,21 @@ get_header(); ?>
 <div class="container">
 
     <?php
-      putRevSlider( "homepage" );
+      //putRevSlider( "homepage" );
     ?>
+
+    <?php if ( have_posts() ) : ?>
+
+    <?php /* Start the Loop */ ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <div id="home-video">
+        <?php
+          putRevSlider( get_post_meta($post->ID, 'slider', true) );
+        ?>
+      </div>
+
+    <?php endwhile; ?>
+    <?php endif; ?>
 
 </div>
 
