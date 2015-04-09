@@ -10,7 +10,6 @@ $mainWhite: #ffffff;
 $mainBorder: #DADADA;
 $bodyGrey: #F2F2F2;
 
-
 $success: $mainGreen;
 $alert: $mainOrange;
 
@@ -78,10 +77,6 @@ and Blueprint http://www.blueprintcss.org/
 
 * {margin:0;padding:0;}
 
-/* must declare 0 margins on everything, also for main layout components use padding, not
-vertical margins (top and bottom) to add spacing, else those margins get added to total height
-and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
-
 html, body {height: 100%;}
 
 /* Sticky footer styles
@@ -108,6 +103,38 @@ h1 a.site-title {
   background-size: 100% auto !important;
   @include linkTextOffscreen();
 }
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+#headerwrap .doc-video {
+    background-color:$mainBlack;
+}
+#headerwrap iframe {
+	margin-top: 110px;
+	min-height: 720px;
+	width: 100%;
+  z-index: 1;
+}
+#headerwrap.doc-info {
+    z-index:10;
+    position:absolute;
+    top:0;
+    left:50px;
+}
+#headerwrap h1 {
+	color:$mainBlue;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+#headerwrap h4 {
+	font-weight: 400;
+	color: $mainBlack;
+}
+
 
 /*----------------------- Navbar ----------------- */
 .navbar {
@@ -169,86 +196,6 @@ h1 a.site-title {
   background-color: $mainBlack; //rgba(20,20,20,.3);
 }
 
-
-/* =Navigation
------------------------------------------------ */
-//
-// .site-content [class*="navigation"] a {
-//   border: 1px solid #DADADA;
-//   background-color: #fff;
-//   padding: 8px 14px;
-//   font-size: 12px;
-//   border-radius: 4px;
-//   display: block;
-//   margin: 0 0 1.5em;
-//   overflow: hidden;
-// }
-// .paging-navigation {
-//   text-transform: uppercase;
-// }
-// .site-content [class*="navigation"] a:hover {
-//   color: #fff;
-//   background: #DA4453;
-//   text-decoration: none;
-// }
-// .more-link {
-//   float: right;
-//   margin: 10px 0;
-// }
-// .single .nav-links {
-//     margin-top: 30px;
-// }
-// [class*="navigation"] .nav-previous {
-//   float: left;
-// }
-// [class*="navigation"] .nav-next {
-//   float: right;
-//   text-align: right;
-// }
-// .nav>li>a {
-//   text-transform: uppercase;
-// }
-// .navbar.navbar-default {
-//   background-color: #363636;
-//   font-family: 'Open Sans', serif;
-//   margin-bottom: 0;
-//   font-weight: 500;
-// }
-// .navbar-default .navbar-nav > li > a {
-//   color: #F5F7FA;
-//   line-height: 40px;
-//   text-transform: uppercase;
-//   font-size: 12px;
-// }
-// .navbar > .container .navbar-brand {
-//   color: #DADADA;
-//   font-size: 20px;
-//   margin: 13px 0;
-//   font-family: 'Roboto Slab', serif;
-// }
-// .navbar-default .navbar-nav > .open > a,
-// .navbar-default .navbar-nav > .open > a:hover,
-// .navbar-default .navbar-nav > .open > a:focus {
-//   border-right: none;
-//   border-left: none;
-// }
-// .navbar {
-//   border-radius: 0;
-// }
-// .navbar-default {
-//   border: none;
-// }
-// .navbar-default .navbar-nav > .active > a,
-// .navbar-default .navbar-nav > .active > a:hover,
-// .navbar-default .navbar-nav > .active > a:focus,
-// .navbar-default .navbar-nav > li > a:hover,
-// .navbar-default .navbar-nav > li > a:focus,
-// .navbar-default .navbar-nav > .open > a,
-// .navbar-default .navbar-nav > .open > a:hover,
-// .navbar-default .navbar-nav > .open > a:focus {
-//   color: #DA4453;
-//   background-color: transparent;
-// }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -262,14 +209,7 @@ h1 a.site-title {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #656D78;
 }
-// @media (max-width: 767px) {
-//   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-//     color: #DADADA;
-//   }
-// }
-// .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-//   border-left: 1px solid rgba(0, 0, 0, 0.1);
-// }
+
 @media (min-width: 767px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
@@ -298,31 +238,7 @@ h1 a.site-title {
 .navbar-nav > li > .dropdown-menu {
   padding: 0;
 }
-// .navbar-nav > li > a {
-//   padding-top: 18px;
-//   padding-bottom: 18px;
-// }
-//
-// .navbar-default .navbar-toggle:hover,
-// .navbar-default .navbar-toggle:focus {
-//   background-color: transparent;
-// }
-// .nav.navbar-nav {
-//   float: right;
-// }
-// @media (max-width: 767px) {
-//   .nav.navbar-nav {
-//     float: none;
-//   }
-//   .navbar > .container .navbar-brand {
-//     margin: 0;
-//   }
-//   .navbar-default .navbar-nav > li > a {
-//     line-height: 20px;
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//   }
-// }
+
 
 
 /*----------------------- Footer ----------------- */
@@ -337,6 +253,7 @@ h1 a.site-title {
   position: absolute;
   bottom: 0;
   width:100%;
+  z-index:999;
 }
 
 //**** Footer Main ***//
@@ -433,6 +350,14 @@ h1 a.site-title {
 
 
 /*----------------------- Main Content ----------------- */
+#home-video {
+  padding-top:0px;
+  z-index:1;
+}
+.page-template-front-page {
+  background-color:$mainBlack;
+}
+
 #primary, #secondary {
   margin-top:70px;
 }
@@ -442,9 +367,8 @@ h1 a.site-title {
 #secondary {
 
 }
-.blog #content {
-    margin-top:30px;
-}
+.blog #content,
+.single #content,
 .page-template-contact-page #content {
     margin-top:30px;
 }
@@ -452,18 +376,6 @@ h1 a.site-title {
   margin-top: 0;
 }
 
-
-// .video-container {
-// position: relative;
-// height: 0;
-// overflow: hidden;
-// width: 100%;
-// height: auto;
-// }
-//
-// .video-container iframe, .video-container object, .video-container embed {
-//     width: 100%;
-// }
 .widget-title {
     color:$mainWhite;
 }
@@ -797,7 +709,6 @@ object {
   margin-top: 30px;
 }
 
-
 /* Custom Category Widget */
 .cats-widget ul li span {
   float: right;
@@ -866,9 +777,7 @@ object {
   border-color: #DA4453;
 }
 
-
-
-/* =Comments
+/* Comments
 ----------------------------------------------- */
 
 .comment-content a {
@@ -1221,7 +1130,7 @@ p.logged-in-as {
     height:40px;
 }
 
-/* =Elements when no javaScript is present
+/* Elements when no javaScript is present
 ----------------------------------------------- */
 #submit,
 .tagcloud,
@@ -1256,6 +1165,9 @@ button[type=submit],
 
 /*----------------------- Desktop Styles ----------------- */
 @media(min-width:768px) {
+  #home-video {
+    padding-top:50px;
+  }
   header .site-header {
     // height:75px;
   }
@@ -1297,15 +1209,11 @@ button[type=submit],
       padding: 20px 25px;
   }
 
-
   ul.nav li.dropdown:hover > ul.dropdown-menu {
       display: block;
     }
 
-  //************************** Footer **********//
-
-
-  /*----------------------- Contact Page ----------------- */
+/*----------------------- Contact Page ----------------- */
 
   /* Responsive iFrame */
   .responsive-iframe-container {
