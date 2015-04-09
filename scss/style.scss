@@ -260,7 +260,7 @@ h1 a.site-title {
 .footer-distributed{
 	background-color: $mainBlack;
 	padding: 55px 50px;
-	margin-top: 80px;
+	margin-top: 0px;
     color:$mainWhite;
 }
 
@@ -368,9 +368,11 @@ h1 a.site-title {
 
 }
 .blog #content,
+.about #content,
 .single #content,
 .page-template-contact-page #content {
     margin-top:30px;
+    margin-bottom:50px;
 }
 .page-template-front-page #content {
   margin-top: 0;
