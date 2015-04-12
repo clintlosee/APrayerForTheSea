@@ -17,7 +17,7 @@ get_header(); ?>
 
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="slide slide-img-about" id="slide1" data-slide="1" data-stellar-background-ratio=".3">
+    <div class="slide slide-img-about" id="slide-about" data-slide="1" data-stellar-background-ratio=".3">
       <div class="container">
         <div class="row">
           <div class="col-md-12 h1" data-stellar-ratio=".2">

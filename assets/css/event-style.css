@@ -54,13 +54,24 @@
     background-image: url(../../img/background-repeat.jpg);
 }
 
-#slide1, #slide3, #slide5, #slide-end {
+#slide1, #slide3, #slide5, #slide-end, #slide-about {
     padding:600px 0 100px 0;
 }
 
 #slide1 {
     height: 100%;
-    background-image: url(../../img/slide1/img1.jpg);
+    background-image: url(../../img/slide1/img1C.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    margin-top:-8px;
+}
+#slide-about{
+    height: 100%;
+    background-image: url(../../img/slide-about/imgAbout.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -77,7 +88,7 @@
 
 #slide3 {
     height: 75%;
-    background-image: url(../../img/slide3/img3.jpg);
+    background-image: url(../../img/slide3/img3B.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -87,7 +98,7 @@
 
 #slide5 {
     height: 75%;
-    background-image: url(../../img/slide6/img6.JPG);
+    background-image: url(../../img/slide6/img6B.JPG);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -97,7 +108,7 @@
 
 #slide-end {
     height: 100%;
-    background-image: url(../../img/slide4/img4.jpg);
+    background-image: url(../../img/slide4/img4B.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

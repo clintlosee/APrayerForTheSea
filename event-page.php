@@ -41,13 +41,13 @@ get_header(); ?>
             <!-- <h3>An International Event</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla ligula, non imperdiet est. Integer ornare nec ex sit amet ornare. Sed et purus vehicula, molestie est at, aliquet nibh. Vivamus non maximus neque. Nulla maximus consequat lorem a pellentesque. Etiam facilisis urna in diam scelerisque, quis ornare leo mattis. Vestibulum odio sem, tristique eu convallis a, posuere vel nunc. Vestibulum malesuada velit vitae sollicitudin faucibus. Quisque placerat, sem ac consectetur dignissim, nunc augue tristique nisi, vitae hendrerit dui dolor sed lacus. Nunc ornare nisl eget est ultricies, vel fringilla tellus ornare. Maecenas sem nisi, suscipit non interdum posuere, venenatis non metus. Quisque id magna arcu. Duis vel ex vel augue consequat faucibus vel et risus. Praesent aliquet in purus quis dapibus.</p>
             <p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p> -->
-<?php
-if(function_exists( 'the_content_part')) {
-  the_content_part(1);
-} else {
-  the_content();
-}
-?>
+            <?php
+                if(function_exists( 'the_content_part')) {
+                  the_content_part(1);
+                } else {
+                  the_content();
+                }
+            ?>
 
           </div>
         </div>
