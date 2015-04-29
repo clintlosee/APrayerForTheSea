@@ -14,7 +14,6 @@ get_header(); ?>
 
 <div id="headerwrap">
     <div class="doc-video">
-        <!-- <iframe src="https://www.youtube.com/embed/RwA3JAeST5E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
         <iframe src="https://www.youtube.com/embed/RwA3JAeST5E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
@@ -35,10 +34,7 @@ get_header(); ?>
                 <div class="col-md-12">
                     <?php the_content() ?>
                 </div>
-
             </div>
-
-
 
             <?php endwhile; // end of the loop. ?>
         </section>
@@ -46,6 +42,5 @@ get_header(); ?>
         </div><!-- row -->
     </div> <!-- container -->
 </div><!-- headerwrap -->
-
 
 <?php get_footer('main'); ?>

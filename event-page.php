@@ -14,14 +14,12 @@ get_header(); ?>
 
 <div class="main">
     <?php if ( have_posts() ) : ?>
-
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
     <div class="slide slide-img" id="slide1" data-slide="1" data-stellar-background-ratio=".3">
       <div class="container">
         <div class="row">
           <div class="col-md-12 h1" data-stellar-ratio=".2">
-            <!-- <h1>Pichilemu, Chile<br><span class="not-bold">Amar, A Prayer For the Sea</span></h1> -->
             <h1><?php the_title() ?><br><span class="not-bold"><?php echo get_post_meta($post->ID, 'event', true)?></span></h1>
           </div>
         </div>
@@ -38,9 +36,6 @@ get_header(); ?>
             <img src="http://www.amar.dev/wp-content/themes/APrayerForTheSea/img/concert_amar_pichilemu.jpg" class="img-responsive" >
           </div>
           <div class="col-md-6">
-            <!-- <h3>An International Event</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla ligula, non imperdiet est. Integer ornare nec ex sit amet ornare. Sed et purus vehicula, molestie est at, aliquet nibh. Vivamus non maximus neque. Nulla maximus consequat lorem a pellentesque. Etiam facilisis urna in diam scelerisque, quis ornare leo mattis. Vestibulum odio sem, tristique eu convallis a, posuere vel nunc. Vestibulum malesuada velit vitae sollicitudin faucibus. Quisque placerat, sem ac consectetur dignissim, nunc augue tristique nisi, vitae hendrerit dui dolor sed lacus. Nunc ornare nisl eget est ultricies, vel fringilla tellus ornare. Maecenas sem nisi, suscipit non interdum posuere, venenatis non metus. Quisque id magna arcu. Duis vel ex vel augue consequat faucibus vel et risus. Praesent aliquet in purus quis dapibus.</p>
-            <p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p> -->
             <?php
                 if(function_exists( 'the_content_part')) {
                   the_content_part(1);
@@ -48,14 +43,12 @@ get_header(); ?>
                   the_content();
                 }
             ?>
-
           </div>
         </div>
       </div>
     </div><!-- slide -->
 
-    <div class="slide slide-img" id="slide3" data-slide="3" data-stellar-background-ratio="0.3">
-    </div>
+    <div class="slide slide-img" id="slide3" data-slide="3" data-stellar-background-ratio="0.3"></div>
 
     <div class="slide slide-text" id="slide4" data-slide="4" data-stellar-background-ratio="1">
       <div class="container">
@@ -68,38 +61,29 @@ get_header(); ?>
         <div class="row">
 
           <div class="col-md-6">
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla ligula, non imperdiet est. Integer ornare nec ex sit amet ornare. Sed et purus vehicula, molestie est at, aliquet nibh. Vivamus non maximus neque. Nulla maximus consequat lorem a pellentesque. Etiam facilisis urna in diam scelerisque, quis ornare leo mattis. Vestibulum odio sem, tristique eu convallis a, posuere vel nunc. Vestibulum malesuada velit vitae sollicitudin faucibus. Quisque placerat, sem ac consectetur dignissim, nunc augue tristique nisi, vitae hendrerit dui dolor sed lacus. Nunc ornare nisl eget est ultricies, vel fringilla tellus ornare. Maecenas sem nisi, suscipit non interdum posuere, venenatis non metus. Quisque id magna arcu. Duis vel ex vel augue consequat faucibus vel et risus. Praesent aliquet in purus quis dapibus.</p>
-            <p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p> -->
-
             <?php
-            if(function_exists( 'the_content_part')) {
-              the_content_part(2);
-            } else {
-              the_content();
-            }
+                if(function_exists( 'the_content_part')) {
+                  the_content_part(2);
+                } else {
+                  the_content();
+                }
             ?>
-
           </div>
 
           <div class="col-md-6">
-            <!-- <p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p> -->
-
             <?php
-            if(function_exists( 'the_content_part')) {
-              the_content_part(3);
-            } else {
-              the_content();
-            }
+                if(function_exists( 'the_content_part')) {
+                  the_content_part(3);
+                } else {
+                  the_content();
+                }
             ?>
-
           </div>
-
         </div>
       </div>
     </div><!-- slide -->
 
-    <div class="slide slide-img" id="slide5" data-slide="5" data-stellar-background-ratio="0.3">
-    </div>
+    <div class="slide slide-img" id="slide5" data-slide="5" data-stellar-background-ratio="0.3"></div>
 
     <div class="slide slide-text" id="slide6" data-slide="6" data-stellar-background-ratio="1">
       <div class="container">
@@ -110,34 +94,24 @@ get_header(); ?>
           </div>
         </div>
         <div class="row">
-
           <div class="col-md-6">
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla ligula, non imperdiet est. Integer ornare nec ex sit amet ornare. Sed et purus vehicula, molestie est at, aliquet nibh. Vivamus non maximus neque. Nulla maximus consequat lorem a pellentesque. Etiam facilisis urna in diam scelerisque, quis ornare leo mattis. Vestibulum odio sem, tristique eu convallis a, posuere vel nunc. Vestibulum malesuada velit vitae sollicitudin faucibus. Quisque placerat, sem ac consectetur dignissim, nunc augue tristique nisi, vitae hendrerit dui dolor sed lacus. Nunc ornare nisl eget est ultricies, vel fringilla tellus ornare. Maecenas sem nisi, suscipit non interdum posuere, venenatis non metus. Quisque id magna arcu. Duis vel ex vel augue consequat faucibus vel et risus. Praesent aliquet in purus quis dapibus.</p>
-            <p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p> -->
-
             <?php
-            if(function_exists( 'the_content_part')) {
-              the_content_part(4);
-            } else {
-              the_content();
-            }
+                if(function_exists( 'the_content_part')) {
+                  the_content_part(4);
+                } else {
+                  the_content();
+                }
             ?>
-
           </div>
-
           <div class="col-md-6">
-            <!-- <p>Cras vitae semper leo. Curabitur metus sem, lobortis ut dolor a, eleifend feugiat sem. Aliquam placerat turpis quis fringilla finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam non diam ligula. Ut purus purus, iaculis id tempus vel, dapibus eu leo. Sed lobortis venenatis arcu at sodales. In consequat, erat consectetur finibus consequat, justo orci tempor arcu, ac vehicula lacus dui at eros. Morbi eros arcu, ornare feugiat lorem sed, elementum cursus ex. Aliquam sed dolor velit. Etiam volutpat tellus id tellus mattis, quis volutpat dolor viverra. Mauris at efficitur neque.</p> -->
-
             <?php
-            if(function_exists( 'the_content_part')) {
-              the_content_part(5);
-            } else {
-              the_content();
-            }
+                if(function_exists( 'the_content_part')) {
+                  the_content_part(5);
+                } else {
+                  the_content();
+                }
             ?>
-
           </div>
-
         </div>
         <div class="row sponsors">
           <div class="col-sm-4"><img src="http://www.amar.dev/wp-content/themes/APrayerForTheSea/img/logo1.png" class="img-responsive"></div>
@@ -159,6 +133,5 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 </div><!-- main -->
-
 
 <?php get_footer('main'); ?>

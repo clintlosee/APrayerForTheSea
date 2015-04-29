@@ -6,7 +6,8 @@
  *
  * @package Amar
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -40,13 +41,7 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="">
-					<?php
-//						if (has_nav_menu('primary')) :
-//							wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-right' ) );
-//						endif;
-					?>
-
+				<div>
 					<?php amar_header_menu(); ?>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
@@ -54,13 +49,7 @@
 
 	</header><!-- #masthead -->
 
-
 		<?php
-		 if ( is_page('Home')) {
-		// 	//layerslider(3, 'homepage'); //insert LayerSlider : number is ID of slider
-		 	//putRevSlider( "homepage" );
-		 }
-
 		//Responsive Google Map on Contact Page
 		if ( is_page('Contact')) {
 			echo '<section>';
@@ -69,7 +58,6 @@
 			echo '</div>';
 			echo '</section>';
 			}
-			?>
-
+		?>
 
 	<div id="content" class="">

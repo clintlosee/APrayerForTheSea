@@ -14,10 +14,6 @@ get_header(); ?>
 
 <div class="container">
 
-    <?php
-      //putRevSlider( "homepage" );
-    ?>
-
     <?php if ( have_posts() ) : ?>
 
     <?php /* Start the Loop */ ?>
@@ -32,7 +28,5 @@ get_header(); ?>
     <?php endif; ?>
 
 </div>
-
-
 
 <?php get_footer('home'); ?>

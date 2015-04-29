@@ -45,7 +45,6 @@
 
 				<p><a class="btn btn-outline read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php _e( 'Read More', 'amar' ); ?></a></p>
 
-
 				<?php
 					wp_link_pages( array(
 						'before' => '<div class="page-links">' . __( 'Pages:', 'amar' ),
